@@ -16,6 +16,8 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  ## NB: no win r-copula (track https://github.com/conda-forge/r-copula-feedstock/issues/22)
+  skip: true  # [win]
 
 requirements:
   build:
